@@ -10,7 +10,9 @@ int main()
 
 	cout << "a:"; cin >> a;
 	cout << "b:"; cin >> b;
-
+	
+	if (a > b) {int temp = a; a = b; b = temp;} 
+	
 	for (int i = 0; i < 14; i++)
 	{
 		cout << "C[" << i + 1 << "]: "; cin >> C[i];
