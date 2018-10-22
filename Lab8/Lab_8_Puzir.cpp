@@ -6,7 +6,6 @@ using namespace std;
 
 const int n = 24;
 
-
 int main()
 {
 	float A[n], temp;
@@ -18,7 +17,7 @@ int main()
 	{
 		A[i] = rand() % 100 - 25;
 		if (A[i] < 0 && A[ot] >= 0) ot = i;
-		cout << A[i] << endl;
+		cout << "A[" << i+1 << "] " <<A[i] << endl;
 	}
 
 	for (i = 0; i < ot - 1; i++)
@@ -36,7 +35,7 @@ int main()
 	cout << endl;
 	for (i = 0; i < n; i++)
 	{
-		cout << A[i] << endl;
+		cout << "A[" << i+1 << "] " <<A[i] << endl;
 	}
 
 	system("Pause");
